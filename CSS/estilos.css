@@ -1,0 +1,115 @@
+/* .home
+{
+position:absolute;
+color:#231f20;
+text-align:left;
+vertical-align:text-top;
+font-size:16px;
+font-family:Inter;
+letter-spacing:-1.100000023841858px;
+line-height:150px;
+border-style:hidden;
+outline:none;
+width:49px;
+} 
+
+.shapewithtext
+{
+
+background-color:#e7dfd8; 
+
+}
+
+
+.aboutme
+{
+position:absolute;
+color:#231f20;
+text-align:center;
+vertical-align:text-top;
+font-size:16px;
+font-family:Inter;
+letter-spacing:-1.100000023841858px;
+line-height:150px;
+border-style:hidden;
+outline:none;
+width:85px;
+}  */
+
+
+
+.barra_navegacion {
+    display: flex; 
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+} 
+
+nav a { 
+    margin-right: 100px ;
+    text-decoration: none;
+    color: inherit;
+   
+
+} 
+
+
+
+.icono { 
+    text-align: center ;
+
+} 
+
+body 
+{ background-color: #e7dfd8;
+    font-family: "Inter", sans-serif;
+
+} 
+
+.texto-e-imagen
+{ display: flex;
+    /* padding: 200px; */
+    width: 100vw;
+    justify-content: center;
+    align-items: center;
+    height: 70vh;
+    
+    }
+
+.ancho-home
+{ max-width: 500px;
+    margin-right: 200px;
+}
+
+
+
+
+@media (max-width: 400px) {
+    
+    .barra_navegacion
+     { 
+        flex-direction: column; /* Cambia a diseño en columna en pantallas pequeñas */
+        align-items: center; /* Centra los enlaces horizontalmente */
+    }
+
+    nav a {
+        padding: 10px; /* Ajusta el padding si es necesario */
+        width: 100%; /* Hace que cada enlace ocupe el ancho completo */
+        text-align: center; /* Centra el texto dentro de los enlaces */
+    }
+
+    .texto-e-imagen
+    { 
+        flex-direction: column; /* Cambia a diseño en columna en pantallas pequeñas */
+        align-items: center;
+        width: auto;
+        height: auto;
+
+    }
+
+    .ancho-home
+    { margin-right: 0px;
+    
+    }
+
+}
