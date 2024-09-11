@@ -46,7 +46,7 @@ width:85px;
 } 
 
 nav a { 
-    margin-right: 100px ;
+    margin-right: 3rem ;
     text-decoration: none;
     color: inherit;
    
@@ -113,3 +113,11 @@ body
     }
 
 }
+
+footer {
+    position: absolute;
+      bottom: 0;
+      width: 95%;
+      text-align: right; /* Alinea el texto del footer a la derecha */
+      padding: 10px; /* Espacio interno opcional */
+  }

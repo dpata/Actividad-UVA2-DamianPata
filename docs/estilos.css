@@ -1,37 +1,32 @@
-.home
-{
-position:absolute;
-color:#231f20;
-text-align:left;
-vertical-align:text-top;
-font-size:16px;
-font-family:Inter;
-letter-spacing:-1.100000023841858px;
-line-height:150px;
-border-style:hidden;
-outline:none;
-width:49px;
+
+#luke {
+    font-style: italic;
+}
+
+.imperio { background-color: red;
 } 
 
-.shapewithtext
-{
+.rebeldes { background-color: blue;
+} 
 
-background-color:#e7dfd8;
-
+#darkvader {
+    font-size: 100px; /* Tamaño de fuente grande */
 }
 
+.soldados {  border-top: 2px solid red;
+    border-right: 1px dashed green;
+    border-bottom: 3px dotted blue;
+    border-left: 4px double black;
+    border-style: dashed;
+} 
 
-.aboutme
-{
-position:absolute;
-color:#231f20;
-text-align:center;
-vertical-align:text-top;
-font-size:16px;
-font-family:Inter;
-letter-spacing:-1.100000023841858px;
-line-height:150px;
-border-style:hidden;
-outline:none;
-width:85px;
-}
+.espacio_soldados { letter-spacing: 3px;
+} 
+
+.centrada_apoyo { text-align: center;
+
+} 
+
+.mayusculas { text-transform: uppercase;
+
+} 
