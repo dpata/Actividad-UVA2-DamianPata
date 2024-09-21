@@ -1,123 +1,164 @@
-/* .home
-{
-position:absolute;
-color:#231f20;
-text-align:left;
-vertical-align:text-top;
-font-size:16px;
-font-family:Inter;
-letter-spacing:-1.100000023841858px;
-line-height:150px;
-border-style:hidden;
-outline:none;
-width:49px;
-} 
-
-.shapewithtext
-{
-
-background-color:#e7dfd8; 
-
+html,
+body {
+  height: 100%;
+  margin: 0;
+  box-sizing: border-box;
+  /* box-sizing: border-box;    para que todas las etiquetas dentro del body tengan eso */
 }
 
+body {
+  background-color: #e7dfd8;
+  font-family: "Inter", sans-serif;
+  display: flex;
+  flex-direction: column;
+}
 
-.aboutme
-{
-position:absolute;
-color:#231f20;
-text-align:center;
-vertical-align:text-top;
-font-size:16px;
-font-family:Inter;
-letter-spacing:-1.100000023841858px;
-line-height:150px;
-border-style:hidden;
-outline:none;
-width:85px;
-}  */
+main {
+  flex: 1;
+  padding: 20px;
+}
 
-
+section {
+  margin-bottom: 80px; /* Espacio entre secciones */
+}
 
 .barra_navegacion {
-    display: flex; 
-    justify-content: center;
-    align-items: center;
-    flex-direction: row;
-} 
-
-nav a { 
-    margin-right: 3rem ;
-    text-decoration: none;
-    color: inherit;
-   
-
-} 
-
-
-
-.icono { 
-    text-align: center ;
-
-} 
-
-body 
-{ background-color: #e7dfd8;
-    font-family: "Inter", sans-serif;
-
-} 
-
-.texto-e-imagen
-{ display: flex;
-    /* padding: 200px; */
-    width: 100vw;
-    justify-content: center;
-    align-items: center;
-    height: 70vh;
-    
-    }
-
-.ancho-home
-{ max-width: 500px;
-    margin-right: 200px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
 }
 
+nav a {
+  margin-right: 3rem;
+  text-decoration: none;
+  color: inherit;
+}
 
+.icono {
+  text-align: center;
+}
 
+.texto-e-imagen {
+  display: flex;
+  /* padding: 200px; */
+  /* width: 100vw; */
+  justify-content: center;
+  align-items: center;
+  height: 70vh;
+}
 
-@media (max-width: 400px) {
-    
-    .barra_navegacion
-     { 
-        flex-direction: column; /* Cambia a diseño en columna en pantallas pequeñas */
-        align-items: center; /* Centra los enlaces horizontalmente */
-    }
-
-    nav a {
-        padding: 10px; /* Ajusta el padding si es necesario */
-        width: 100%; /* Hace que cada enlace ocupe el ancho completo */
-        text-align: center; /* Centra el texto dentro de los enlaces */
-    }
-
-    .texto-e-imagen
-    { 
-        flex-direction: column; /* Cambia a diseño en columna en pantallas pequeñas */
-        align-items: center;
-        width: auto;
-        height: auto;
-
-    }
-
-    .ancho-home
-    { margin-right: 0px;
-    
-    }
-
+.ancho-home {
+  max-width: 500px;
+  margin-right: 200px;
 }
 
 footer {
-    position: absolute;
-      bottom: 0;
-      width: 95%;
-      text-align: right; /* Alinea el texto del footer a la derecha */
-      padding: 10px; /* Espacio interno opcional */
+  /* width: 100%; */
+  padding: 10px;
+  text-align: right;
+}
+
+footer p {
+  margin-right: 50px;
+}
+
+/* Estilos para el formulario*/
+form {
+  width: 300px; /* Ajusta el ancho del formulario si es necesario */
+  padding: 10px;
+  margin: 0; /* Elimina el margen para evitar el centrado */
+}
+
+/* Estilos para los grupos */
+.form-group {
+  margin-bottom: 15px; /* Espacio entre los campos del formulario */
+}
+
+/* Estilo para las etiquetas */
+label {
+  display: block; /* Hace que las etiquetas ocupen una línea completa */
+  margin-bottom: 5px; /* Espacio entre la etiqueta y el campo de entrada */
+}
+
+/* Estilo para los campos a completar */
+input[type="text"],
+input[type="email"],
+textarea {
+  width: 100%; /* Hace que los campos ocupen todo el ancho disponible del formulario */
+  padding: 8px; /* Espacio interno en los campos de entrada */
+  box-sizing: border-box; /* Incluye el padding en el ancho total */
+  border: 1px solid #ccc; /* Bordes ligeros */
+  border-radius: 4px; /* Bordes redondeados */
+}
+
+.certificaciones {
+  font-weight: bold;
+  font-size: 25px;
+}
+
+.imagen-contacto {
+  /* position: absolute; */
+  /* top: 0;
+  right: 0; */
+  margin-left: 100px; /* Espacio alrededor de la imagen */
+  max-width: 1500px; /* Ajusta el tamaño máximo de la imagen */
+  height: auto; /* Mantiene las proporciones de la imagen */
+}
+
+.imagen-rack {
+  top: 0;
+  right: 1;
+  margin: 0px; /* Espacio alrededor de la imagen */
+  max-width: 400px; /* Ajusta el tamaño máximo de la imagen */
+  height: auto; /* Mantiene las proporciones de la imagen */
+}
+
+.div-imagen {
+  display: flex;
+}
+
+/* Estilos para el responsive */
+
+@media (max-width: 400px) {
+  .barra_navegacion {
+    flex-direction: column; /* Cambia a diseño en columna en pantallas pequeñas */
+    align-items: center; /* Centra los enlaces horizontalmente */
   }
+
+  nav a {
+    padding: 10px; /* Ajusta el padding si es necesario */
+    width: 100%; /* Hace que cada enlace ocupe el ancho completo */
+    text-align: center; /* Centra el texto dentro de los enlaces */
+  }
+
+  .texto-e-imagen {
+    flex-direction: column; /* Cambia a diseño en columna en pantallas pequeñas */
+    align-items: center;
+    width: auto;
+    height: auto;
+  }
+
+  .ancho-home {
+    margin-right: 0px;
+  }
+
+  .imagen-contacto {
+    max-height: 200px;
+    max-width: 300px;
+    margin: 0;
+  }
+
+  .div-imagen {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .imagen-rack {
+    top: 0;
+    right: 1;
+    margin: 0px; /* Espacio alrededor de la imagen */
+    max-width: 300px; /* Ajusta el tamaño máximo de la imagen */
+    height: auto; /* Mantiene las proporciones de la imagen */
+  }
+}
